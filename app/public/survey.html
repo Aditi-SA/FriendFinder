@@ -42,7 +42,7 @@
 
         <h3><strong>Question 2:</strong></h3>
         <h4>You find it easy to stay relaxed even when there is some pressure.</h4>
-        <select class="choice" id="Q1">
+        <select class="choice" id="Q2">
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 </option>
             <option value="3">3 </option>
@@ -52,7 +52,7 @@
 
         <h3><strong>Question 3:</strong></h3>
         <h4>You rarely do something just out of sheer curiosity.</h4>
-        <select class="choice" id="Q1">
+        <select class="choice" id="Q3">
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 </option>
             <option value="3">3 </option>
@@ -62,7 +62,7 @@
 
         <h3><strong>Question 4:</strong></h3>
         <h4>You do not usually initiate conversations.</h4>
-        <select class="choice" id="Q1">
+        <select class="choice" id="Q4">
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 </option>
             <option value="3">3 </option>
@@ -72,7 +72,7 @@
 
         <h3><strong>Question 5:</strong></h3>
         <h4>You find it difficult to introduce yourself to other people.</h4>
-        <select class="choice" id="Q1">
+        <select class="choice" id="Q5">
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 </option>
             <option value="3">3 </option>
@@ -82,7 +82,7 @@
 
         <h3><strong>Question 6:</strong></h3>
         <h4></h4>
-        <select class="choice" id="Q1">
+        <select class="choice" id="Q6">
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 </option>
             <option value="3">3 </option>
@@ -92,7 +92,7 @@
 
         <h3><strong>Question 7:</strong></h3>
         <h4></h4>
-        <select class="choice" id="Q1">
+        <select class="choice" id="Q7">
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 </option>
             <option value="3">3 </option>
@@ -102,7 +102,7 @@
 
         <h3><strong>Question 8:</strong></h3>
         <h4></h4>
-        <select class="choice" id="Q1">
+        <select class="choice" id="Q8">
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 </option>
             <option value="3">3 </option>
@@ -112,7 +112,7 @@
 
         <h3><strong>Question 9:</strong></h3>
         <h4></h4>
-        <select class="choice" id="Q1">
+        <select class="choice" id="Q9">
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 </option>
             <option value="3">3 </option>
@@ -122,7 +122,7 @@
 
         <h3><strong>Question 10:</strong></h3>
         <h4></h4>
-        <select class="choice" id="Q1">
+        <select class="choice" id="Q10">
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 </option>
             <option value="3">3 </option>
@@ -193,7 +193,9 @@
                 // create array for scores
                 var scores = [];
                 for (var i = 1; i < 11; i++) {
-                    scores.push(parseInt($("#q" + i).val()));
+                    scores.push(parseInt($("#Q" + i).val()));
+                    var q = $("#Q" + i).val();
+                    console.log(q);
                 }
                 // Create an object for the user's data
                 var userData = {
